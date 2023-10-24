@@ -1,0 +1,36 @@
+{
+    "models": [
+        {
+            "enabled": true,
+            "model_name": "Cases",
+            "model": {
+                "type": "neural_net",
+                "alpha": 1e-6,
+                "hidden_layer_sizes": "auto",
+                "learning_rate_init": 0.0008,
+                "max_iter": 50000,
+                "batch_size": 32,
+                "tol": 1e-6,
+                "n_iter_no_change": 250,
+                "verbose": false
+            },
+            "datagrabber_class": "CasesDataGrabber",
+            "grab_data_from_server": true,
+            "offline_dataset_date": "2020-09-26",
+            "days_to_predict": 10
+        },
+        {
+            "_comment": "This is an example of how to use a polynomial regression model which can be useful in most cases.",
+            "enabled": false,
+            "model_name": "Cases using Polynomial Regression",
+            "model": {
+                "type": "regression",
+                "polynomial_degree": 2
+            },
+            "datagrabber_class": "CasesDataGrabber",
+            "grab_data_from_server": true,
+            "offline_dataset_date": "2020-05-15",
+            "days_to_predict": 10
+        }
+    ]
+}
