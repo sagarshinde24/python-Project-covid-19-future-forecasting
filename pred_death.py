@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 17 12:36:06 2021
 
-@author: sheet
-"""
+
 
 import operator
 import json
